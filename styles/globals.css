@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.screen {
+  @apply rounded-md text-center shadow-md font-medium;
+}
+
+.button {
+  @apply text-white font-bold py-2 px-4 border-b-4 rounded;
+}
+
+.primary-button {
+  @apply bg-blue-500 hover:bg-blue-400 border-blue-700 hover:border-blue-500;
+}
+
+.number-button {
+  @apply bg-yellow-500 hover:bg-yellow-400 border-yellow-700 hover:border-yellow-500;
+}
+
+.submit-button {
+  @apply bg-lime-500 hover:bg-lime-400 border-lime-700 hover:border-lime-500;
+}
+
+.operator-button {
+  @apply bg-orange-500 hover:bg-orange-400 border-orange-700 hover:border-orange-500;
+}
+
+.newgame-button {
+  @apply bg-red-500 hover:bg-red-400 border-red-700 hover:border-red-500;
+}
+
+.center {
+  @apply flex items-center justify-center;
+}
